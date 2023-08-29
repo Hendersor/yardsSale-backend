@@ -1,0 +1,323 @@
+[
+     {
+       "id": "1",
+       "nombre": "Smartphone Galaxy S21",
+       "categoria": "Electronics",
+       "descripcion": "Potente smartphone con cámara de alta resolución.",
+       "precio": 799.99,
+       "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282474/API%20REST%20IMAGES/Smartphone_Galaxy_S21.jpg"
+     },
+     {
+       "id": "2",
+       "nombre": "Smart TV 4K 55 pulgadas",
+       "categoria": "Electronics",
+       "descripcion": "Televisor con resolución 4K y Smart TV integrado.",
+       "precio": 699.99,
+       "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282467/API%20REST%20IMAGES/Smart_TV_4K_55_pulgadas.jpg"
+     },
+     {
+       "id": "3",
+       "nombre": "Laptop Ultrabook X1",
+       "categoria": "Electronics",
+       "descripcion": "Laptop ultradelgada y potente para profesionales.",
+       "precio": 1299.99,
+       "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282470/API%20REST%20IMAGES/Laptop_Ultrabook_X1.jpg"
+     },
+     {
+       "id": "4",
+       "nombre": "Auriculares Inalámbricos Pro",
+       "categoria": "Electronics",
+       "descripcion": "Auriculares premium con cancelación de ruido.",
+       "precio": 249.99,
+       "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282471/API%20REST%20IMAGES/Auriculares_Inal%C3%A1mbricos_Pro_a0twvr.jpg"
+     },
+     {
+       "id": "5",
+       "nombre": "Reloj de Lujo Automático",
+       "categoria": "Jewelry",
+       "descripcion": "Elegante reloj automático con correa de cuero.",
+       "precio": 599.99,
+       "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282475/API%20REST%20IMAGES/Reloj_de_Lujo_Autom%C3%A1tico_jctbfj.jpg"
+     },
+     {
+       "id": "6",
+       "nombre": "Collar de Perlas Naturales",
+       "categoria": "Jewelry",
+       "descripcion": "Collar de perlas cultivadas de alta calidad.",
+       "precio": 349.99,
+       "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282473/API%20REST%20IMAGES/Collar_de_Perlas_Naturales_qgqki4.jpg"
+     },
+     {
+       "id": "7",
+       "nombre": "Camisa de Vestir Clásica",
+       "categoria": "Men's Clothing",
+       "descripcion": "Camisa de vestir de algodón con corte clásico.",
+       "precio": 79.99,
+       "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282467/API%20REST%20IMAGES/Camisa_de_Vestir_Cl%C3%A1sica_yzno96.jpg"
+     },
+     {
+       "id": "8",
+       "nombre": "Vaqueros Slim Fit",
+       "categoria": "Men's Clothing",
+       "descripcion": "Vaqueros de corte ajustado y diseño moderno.",
+       "precio": 89.99,
+       "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282470/API%20REST%20IMAGES/Vaqueros_Slim_Fit_ieuysr.jpg"
+     },
+     {
+       "id": "9",
+       "nombre": "Vestido Elegante de Noche",
+       "categoria": "Women's Clothing",
+       "descripcion": "Vestido elegante para ocasiones especiales.",
+       "precio": 149.99,
+       "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282473/API%20REST%20IMAGES/Vestido_Elegante_de_Noche_ui6lbp.jpg"
+     },
+     {
+       "id": "10",
+       "nombre": "Blusa de Seda Estampada",
+       "categoria": "Women's Clothing",
+       "descripcion": "Blusa de seda con estampado floral y estilo sofisticado.",
+       "precio": 119.99,
+       "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282471/API%20REST%20IMAGES/Blusa_de_Seda_Estampada_bpaa9v.jpg"
+     },
+     {
+          "id": "11",
+          "nombre": "Monitor Curvo 34 pulgadas",
+          "categoria": "Electronics",
+          "descripcion": "Monitor curvo ultrawide para una experiencia inmersiva.",
+          "precio": 899.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282468/API%20REST%20IMAGES/Monitor_Curvo_34_pulgadas_bdcc4s.jpg"
+        },
+        {
+          "id": "12",
+          "nombre": "Altavoz Bluetooth Portátil",
+          "categoria": "Electronics",
+          "descripcion": "Altavoz inalámbrico con sonido de alta calidad.",
+          "precio": 59.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282470/API%20REST%20IMAGES/Altavoz_Bluetooth_Port%C3%A1til_fnwplm.jpg"
+        },
+        {
+          "id": "13",
+          "nombre": "Collar de Diamantes Radiantes",
+          "categoria": "Jewelry",
+          "descripcion": "Collar con diamantes radiantes en un elegante diseño.",
+          "precio": 1299.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282473/API%20REST%20IMAGES/Collar_de_Diamantes_Radiantes_t1unpg.jpg"
+        },
+        {
+          "id": "14",
+          "nombre": "Traje de Vestir Clásico",
+          "categoria": "Men's Clothing",
+          "descripcion": "Traje de vestir completo con chaqueta y pantalones.",
+          "precio": 399.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282474/API%20REST%20IMAGES/Traje_de_Vestir_Cl%C3%A1sico_kmz6fv.jpg"
+        },
+        {
+          "id": "15",
+          "nombre": "Gafas de Sol Polarizadas",
+          "categoria": "Men's Clothing",
+          "descripcion": "Gafas de sol con lentes polarizadas y estilo moderno.",
+          "precio": 89.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282474/API%20REST%20IMAGES/Gafas_de_Sol_Polarizadas_ipkccc.jpg"
+        },
+        {
+          "id": "16",
+          "nombre": "Vestido de Fiesta Brillante",
+          "categoria": "Women's Clothing",
+          "descripcion": "Vestido de fiesta con detalles brillantes y escote elegante.",
+          "precio": 179.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282471/API%20REST%20IMAGES/Vestido_de_Fiesta_Brillante_shlnoz.jpg"
+        },
+        {
+          "id": "17",
+          "nombre": "Bolso de Cuero Genuino",
+          "categoria": "Women's Clothing",
+          "descripcion": "Bolso de cuero de alta calidad con espacio amplio.",
+          "precio": 199.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282468/API%20REST%20IMAGES/Bolso_de_Cuero_Genuino_kgg1ru.jpg"
+        },
+        {
+          "id": "18",
+          "nombre": "Cámara Réflex Profesional",
+          "categoria": "Electronics",
+          "descripcion": "Cámara réflex con capacidad de grabación en 4K.",
+          "precio": 1499.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282470/API%20REST%20IMAGES/C%C3%A1mara_R%C3%A9flex_Profesional_gb37fr.jpg"
+        },
+        {
+          "id": "19",
+          "nombre": "Anillo de Compromiso de Diamantes",
+          "categoria": "Jewelry",
+          "descripcion": "Anillo de compromiso con diamante central y acentos brillantes.",
+          "precio": 1999.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282473/API%20REST%20IMAGES/Anillo_de_Compromiso_de_Diamantes_nxntcy.jpg"
+        },
+        {
+          "id": "20",
+          "nombre": "Blusa Casual de Algodón",
+          "categoria": "Women's Clothing",
+          "descripcion": "Blusa casual de algodón con diseño relajado y cómodo.",
+          "precio": 39.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282471/API%20REST%20IMAGES/Blusa_Casual_de_Algod%C3%B3n_yjyetc.jpg"
+        },
+        {
+          "id": "21",
+          "nombre": "Tablet 10 pulgadas",
+          "categoria": "Electronics",
+          "descripcion": "Tablet con pantalla de alta resolución y rendimiento fluido.",
+          "precio": 299.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282476/API%20REST%20IMAGES/Tablet_10_pulgadas_caebu1.jpg"
+        },
+        {
+          "id": "22",
+          "nombre": "Reloj Deportivo Inteligente",
+          "categoria": "Electronics",
+          "descripcion": "Reloj inteligente con seguimiento de actividad y notificaciones.",
+          "precio": 129.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282468/API%20REST%20IMAGES/Reloj_Deportivo_Inteligente_lmmune.jpg"
+        },
+        {
+          "id": "23",
+          "nombre": "Collar de Zafiro Elegante",
+          "categoria": "Jewelry",
+          "descripcion": "Collar con zafiro en tonos azules y diseño elegante.",
+          "precio": 499.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282474/API%20REST%20IMAGES/Collar_de_Zafiro_Elegante_gsha9c.jpg"
+        },
+        {
+          "id": "24",
+          "nombre": "Chaqueta de Mezclilla Vintage",
+          "categoria": "Men's Clothing",
+          "descripcion": "Chaqueta de mezclilla vintage con estilo retro.",
+          "precio": 89.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282475/API%20REST%20IMAGES/Chaqueta_de_Mezclilla_Vintage_qf6l02.jpg"
+        },
+        {
+          "id": "25",
+          "nombre": "Pantalones Chinos Clásicos",
+          "categoria": "Men's Clothing",
+          "descripcion": "Pantalones chinos de corte clásico y cómodo.",
+          "precio": 59.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282471/API%20REST%20IMAGES/Pantalones_Chinos_Cl%C3%A1sicos_femjee.jpg"
+        },
+        {
+          "id": "26",
+          "nombre": "Vestido de Encaje Romántico",
+          "categoria": "Women's Clothing",
+          "descripcion": "Vestido de encaje con detalles románticos y femeninos.",
+          "precio": 149.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282474/API%20REST%20IMAGES/Vestido_de_Encaje_Rom%C3%A1ntico_qa47mo.jpg"
+        },
+        {
+          "id": "27",
+          "nombre": "Bolso de Mano Elegante",
+          "categoria": "Women's Clothing",
+          "descripcion": "Bolso de mano con diseño elegante y practicidad.",
+          "precio": 79.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282468/API%20REST%20IMAGES/Bolso_de_Mano_Elegante_fvxhio.jpg"
+        },
+        {
+          "id": "28",
+          "nombre": "Auriculares Inalámbricos Deportivos",
+          "categoria": "Electronics",
+          "descripcion": "Auriculares inalámbricos diseñados para actividades deportivas.",
+          "precio": 49.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282472/API%20REST%20IMAGES/Auriculares_Inal%C3%A1mbricos_Deportivos_xpcd1g.jpg"
+        },
+        {
+          "id": "29",
+          "nombre": "Anillo de Plata Elegante",
+          "categoria": "Jewelry",
+          "descripcion": "Anillo de plata con diseño elegante y versátil.",
+          "precio": 89.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282468/API%20REST%20IMAGES/Anillo_de_Plata_Elegante_qsy2bd.jpg"
+        },
+        {
+          "id": "30",
+          "nombre": "Blusa de Manga Larga Casual",
+          "categoria": "Women's Clothing",
+          "descripcion": "Blusa de manga larga perfecta para un look casual.",
+          "precio": 34.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282471/API%20REST%20IMAGES/Blusa_de_Manga_Larga_Casual_ap8b9o.jpg"
+        },
+        {
+          "id": "31",
+          "nombre": "Cámara de Acción 4K",
+          "categoria": "Electronics",
+          "descripcion": "Cámara compacta de acción con grabación en calidad 4K.",
+          "precio": 149.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282473/API%20REST%20IMAGES/C%C3%A1mara_de_Acci%C3%B3n_4K_c8tmyh.jpg"
+        },
+        {
+          "id": "32",
+          "nombre": "Portátil Convertible 2 en 1",
+          "categoria": "Electronics",
+          "descripcion": "Portátil convertible con pantalla táctil y versatilidad.",
+          "precio": 899.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282470/API%20REST%20IMAGES/Port%C3%A1til_Convertible_2_en_1_t687en.jpg"
+        },
+        {
+          "id": "33",
+          "nombre": "Pulsera de Perlas y Diamantes",
+          "categoria": "Jewelry",
+          "descripcion": "Pulsera elegante con perlas y detalles de diamantes.",
+          "precio": 279.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282475/API%20REST%20IMAGES/Pulsera_de_Perlas_y_Diamantes_zzjler.jpg"
+        },
+        {
+          "id": "34",
+          "nombre": "Camiseta Casual Estampada",
+          "categoria": "Men's Clothing",
+          "descripcion": "Camiseta casual con estampado moderno y cómodo.",
+          "precio": 29.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282472/API%20REST%20IMAGES/Camiseta_Casual_Estampada_gdpqtk.jpg"
+        },
+        {
+          "id": "35",
+          "nombre": "Chaqueta de Cuero Clásica",
+          "categoria": "Men's Clothing",
+          "descripcion": "Chaqueta de cuero genuino con estilo atemporal.",
+          "precio": 199.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282475/API%20REST%20IMAGES/Chaqueta_de_Cuero_Cl%C3%A1sica.jpg"
+        },
+        {
+          "id": "36",
+          "nombre": "Vestido de Verano Bohemio",
+          "categoria": "Women's Clothing",
+          "descripcion": "Vestido bohemio perfecto para los días de verano.",
+          "precio": 59.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282475/API%20REST%20IMAGES/Vestido_de_Verano_Bohemio_ghpdza.webp"
+        },
+        {
+          "id": "37",
+          "nombre": "Bolso Tote de Cuero",
+          "categoria": "Women's Clothing",
+          "descripcion": "Bolso tote espacioso y versátil de cuero genuino.",
+          "precio": 149.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282472/API%20REST%20IMAGES/Bolso_Tote_de_Cuero_q3osrk.jpg"
+        },
+        {
+          "id": "38",
+          "nombre": "Altavoces Bluetooth Estéreo",
+          "categoria": "Electronics",
+          "descripcion": "Altavoces Bluetooth con sonido estéreo envolvente.",
+          "precio": 129.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282468/API%20REST%20IMAGES/Altavoces_Bluetooth_Est%C3%A9reo_pyjnei.jpg"
+        },
+        {
+          "id": "39",
+          "nombre": "Pendientes de Diamantes Brillantes",
+          "categoria": "Jewelry",
+          "descripcion": "Pendientes con diamantes brillantes en diseño elegante.",
+          "precio": 399.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282467/API%20REST%20IMAGES/Pendientes_de_Diamantes_Brillantes_ubjgah.jpg"
+        },
+        {
+          "id": "40",
+          "nombre": "Blusa Estampada de Flores",
+          "categoria": "Women's Clothing",
+          "descripcion": "Blusa de manga corta con estampado de flores.",
+          "precio": 44.99,
+          "urlImagen": "https://res.cloudinary.com/dwdz4mn27/image/upload/v1693282473/API%20REST%20IMAGES/Blusa_Estampada_de_Flores_deo6r2.jpg"
+        }
+   ]
+   
