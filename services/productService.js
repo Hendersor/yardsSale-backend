@@ -1,5 +1,5 @@
-import { v4 as uuidv4 } from "uuid";
 import { data } from "../data.js";
+import { add, find, update, delet } from "../helpers/services.js";
 
 class ProductService {
   constructor() {
@@ -11,42 +11,19 @@ class ProductService {
   }
 
   async create(data) {
-    const newProduct = {
-      id: uuidv4(),
-      ...data,
-    };
-    this.products.push(newProduct);
-    return newProduct;
+    return add(this.products, data);
   }
 
   async findOne(id) {
-    const product = this.products.find((item) => item.id === id);
-    if (!product) {
-      return {
-        message: "Product not found",
-      };
-    }
-    return product;
+    return find(this.products, id);
   }
 
   async update(id, changes) {
-    const index = this.products.findIndex((item) => item.id === id);
-    if (index === -1) {
-      return { message: "product not found" };
-    }
-    const product = this.products[index];
-    this.products[index] = {
-      ...product,
-      ...changes,
-    };
-    return this.products[index];
+    return update(this.products, id, changes);
   }
 
   async delete(id) {
-    const index = this.products.findIndex((item) => item.id === id);
-    if (index === -1) return { message: "product not found" };
-    this.products.splice(index, 1);
-    return { message: "deleted", id: id };
+    return delet(this.products, id);
   }
 }
 
