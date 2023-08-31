@@ -4,7 +4,7 @@ import {
   updateProductSchema,
   getProductSchema,
 } from "../schemas/productsSchema.js";
-import { validatorHandler } from "../middlewares/validatorHanlder.js";
+import { schemaValidator } from "../middlewares/schemaValidator.js";
 import express from "express";
 
 const router = express.Router();
@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
 
 router.get(
   "/:id",
-  validatorHandler(getProductSchema, "params"),
+  schemaValidator(getProductSchema, "params"),
   async (req, res, next) => {
     try {
       const { id } = req.params;
@@ -31,7 +31,7 @@ router.get(
 
 router.post(
   "/",
-  validatorHandler(createProductSchema, "body"),
+  schemaValidator(createProductSchema, "body"),
   async (req, res) => {
     const body = req.body;
     const newProduct = await service.create(body);
@@ -41,8 +41,8 @@ router.post(
 
 router.patch(
   "/:id",
-  validatorHandler(getProductSchema, "params"),
-  validatorHandler(updateProductSchema, "body"),
+  schemaValidator(getProductSchema, "params"),
+  schemaValidator(updateProductSchema, "body"),
   async (req, res, next) => {
     try {
       const { id } = req.params;
@@ -57,7 +57,7 @@ router.patch(
 
 router.delete(
   "/:id",
-  validatorHandler(getProductSchema, "params"),
+  schemaValidator(getProductSchema, "params"),
   async (req, res, next) => {
     try {
       const { id } = req.params;

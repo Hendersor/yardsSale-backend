@@ -1,6 +1,6 @@
 import express from "express";
 import { wishService } from "../services/wishService.js";
-import { validatorHandler } from "../middlewares/errorHandler.js";
+import { schemaValidator } from "../middlewares/schemaValidator.js";
 import {
   createProductSchema,
   getProductSchema,
@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
 
 router.delete(
   "/:id",
-  validatorHandler(getProductSchema, "params"),
+  schemaValidator(getProductSchema, "params"),
   async (req, res, next) => {
     try {
       const { id } = req.params;
@@ -29,7 +29,7 @@ router.delete(
 
 router.post(
   "/",
-  validatorHandler(createProductSchema, "body"),
+  schemaValidator(createProductSchema, "body"),
   async (req, res) => {
     const body = req.body;
     const product = await service.addProduct(body);
