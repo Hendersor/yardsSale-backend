@@ -1,13 +1,17 @@
 import { data } from "../data.js";
 import { add, find, update, delet } from "../helpers/services.js";
+import { pool } from "../libs/postgresPool.js";
 
 class ProductService {
   constructor() {
     this.products = data;
+    this.pool = pool;
   }
 
   async find() {
-    return this.products;
+    const query = "SELECT * FROM tasks";
+    const rta = await this.pool.query(query);
+    return rta;
   }
 
   async create(data) {
