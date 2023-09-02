@@ -1,20 +1,21 @@
 import { add, delet } from "../helpers/services.js";
+import { sequelize } from "./../libs/sequelize.js";
 
 class CartService {
   constructor() {
-    this.products = [];
+    this.models = sequelize.models.Cart;
   }
 
   async find() {
-    return this.products;
+    return await this.models.findAll();
   }
 
   async addProduct(data) {
-    return add(this.products, data);
+    return await add(this.models, data);
   }
 
   async deleteProduct(id) {
-    return delet(this.products, id);
+    return await delet(this.models, id);
   }
 }
 

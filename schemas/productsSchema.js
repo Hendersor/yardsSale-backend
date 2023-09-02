@@ -1,14 +1,14 @@
 import Joi from "joi";
 
-const id = Joi.string().uuid();
-const name = Joi.string().alphanum();
+const id = Joi.string();
+const title = Joi.string().alphanum();
 const category = Joi.string().alphanum();
 const description = Joi.string().alphanum();
 const price = Joi.number().integer();
 const image = Joi.string().uri();
 
 const createProductSchema = Joi.object({
-  name: name.required(),
+  title: title.required(),
   category: category.required(),
   description: description.required(),
   price: price.required(),
@@ -16,7 +16,7 @@ const createProductSchema = Joi.object({
 });
 
 const updateProductSchema = Joi.object({
-  name: name,
+  title: title,
   category: category,
   description: description,
   price: price,

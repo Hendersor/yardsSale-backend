@@ -1,33 +1,29 @@
-import { data } from "../data.js";
 import { add, find, update, delet } from "../helpers/services.js";
-import { pool } from "../libs/postgresPool.js";
+import { sequelize } from "../libs/sequelize.js";
 
 class ProductService {
   constructor() {
-    this.products = data;
-    this.pool = pool;
+    this.models = sequelize.models.Product;
   }
 
   async find() {
-    const query = "SELECT * FROM tasks";
-    const rta = await this.pool.query(query);
-    return rta;
+    return await this.models.findAll();
   }
 
   async create(data) {
-    return add(this.products, data);
+    return await add(this.models, data);
   }
 
   async findOne(id) {
-    return find(this.products, id);
+    return await find(this.models, id);
   }
 
   async update(id, changes) {
-    return update(this.products, id, changes);
+    return await update(this.models, id, changes);
   }
 
   async delete(id) {
-    return delet(this.products, id);
+    return await delet(this.models, id);
   }
 }
 

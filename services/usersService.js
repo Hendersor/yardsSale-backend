@@ -1,28 +1,29 @@
 import { add, find, update, delet } from "../helpers/services.js";
+import { sequelize } from "./../libs/sequelize.js";
 
 class userService {
   constructor() {
-    this.users = [];
+    this.models = sequelize.models.User;
   }
 
   async allUsers() {
-    return this.users;
+    return await this.models.findAll();
   }
 
   async findUser(id) {
-    return find(this.users, id);
+    return await find(this.models, id);
   }
 
   async createUser(data) {
-    return add(this.user, data);
+    return await add(this.models, data);
   }
 
   async updateUser(id, body) {
-    return update(this.user, id, body);
+    return await update(this.models, id, body);
   }
 
   async deleteUser(id) {
-    return delet(this.users, id);
+    return await delet(this.models, id);
   }
 }
 
