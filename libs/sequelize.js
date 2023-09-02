@@ -11,17 +11,17 @@ const sequelize = new Sequelize(URI, {
   dialect: "postgres",
   logging: true,
 });
+setupModels(sequelize);
 
-sequelize
-  .authenticate()
-  // This is the model function. And it's going to execute
-  // right before the conection to create the models of the tables only if they are not already created.
-  .then(() => {
-    setupModels(sequelize);
-    sequelize.sync();
-  })
-  .catch((err) => {
-    console.error("Conection failed");
-  });
+// sequelize
+//   .authenticate()
+//   // This is the model function. And it's going to execute
+//   // right before the conection to create the models of the tables only if they are not already created.
+//   .then(() => {
+//     sequelize.sync();
+//   })
+//   .catch((err) => {
+//     console.error("Conection failed");
+//   });
 
 export { sequelize };
