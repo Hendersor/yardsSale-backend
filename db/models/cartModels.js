@@ -1,4 +1,4 @@
-import { Model, DataTypes } from "sequelize";
+const { Model, DataTypes } = require("sequelize");
 
 const CART_TABLE = "cart";
 
@@ -35,4 +35,4 @@ class Cart extends Model {
   }
 }
 
-export { CART_TABLE, CartModel, Cart };
+module.exports = { CART_TABLE, CartModel, Cart };

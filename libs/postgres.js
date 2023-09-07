@@ -1,4 +1,4 @@
-import Client from "pg";
+const { Client } = require("pg");
 
 async function getConection() {
   const client = new Client({
@@ -12,4 +12,4 @@ async function getConection() {
   return client;
 }
 
-export { getConection };
+module.exports = { getConection };

@@ -1,4 +1,4 @@
-import boom from "@hapi/boom";
+const boom = require("@hapi/boom");
 
 function schemaValidator(schema, property) {
   return (req, res, next) => {
@@ -11,4 +11,4 @@ function schemaValidator(schema, property) {
   };
 }
 
-export { schemaValidator };
+module.exports = { schemaValidator };

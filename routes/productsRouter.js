@@ -1,11 +1,11 @@
-import { ProductService } from "../services/productService.js";
-import {
+const express = require("express");
+const { ProductService } = require("../services/productService.js");
+const {
   createProductSchema,
   updateProductSchema,
   getProductSchema,
-} from "../schemas/productsSchema.js";
-import { schemaValidator } from "../middlewares/schemaValidator.js";
-import express from "express";
+} = require("../schemas/productsSchema.js");
+const { schemaValidator } = require("../middlewares/schemaValidator.js");
 
 const router = express.Router();
 const service = new ProductService();
@@ -69,4 +69,4 @@ router.delete(
   }
 );
 
-export { router };
+module.exports = { router };

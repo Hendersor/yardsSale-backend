@@ -1,7 +1,10 @@
-import express from "express";
-import { CartService } from "../services/cartService.js";
-import { createCartSchema, deleteCartSchema } from "../schemas/cartSchema.js";
-import { schemaValidator } from "../middlewares/schemaValidator.js";
+const express = require("express");
+const { CartService } = require("../services/cartService.js");
+const {
+  createCartSchema,
+  deleteCartSchema,
+} = require("../schemas/cartSchema.js");
+const { schemaValidator } = require("../middlewares/schemaValidator.js");
 
 const router = express.Router();
 const service = new CartService();
@@ -35,4 +38,4 @@ router.delete(
   }
 );
 
-export { router };
+module.exports = { router };

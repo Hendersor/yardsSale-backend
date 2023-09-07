@@ -1,12 +1,12 @@
-import { v4 as uuidv4 } from "uuid";
-import boom from "@hapi/boom";
+const { v4: uuidv4 } = require("uuid");
+const boom = require("@hapi/boom");
 
-export async function add(model, data) {
+async function add(model, data) {
   const recordToCreate = await model.create(data);
   return recordToCreate;
 }
 
-export async function find(model, id) {
+async function find(model, id) {
   const recordToFind = await model.findByPk(id);
   if (recordToFind === -1) {
     throw boom.notFound("Not found");
@@ -14,7 +14,7 @@ export async function find(model, id) {
   return recordToFind;
 }
 
-export async function update(model, id, body) {
+async function update(model, id, body) {
   const recordToUpdate = await model.findByPk(id);
   if (recordToUpdate === -1) {
     throw boom.notFound("Not found");
@@ -23,7 +23,7 @@ export async function update(model, id, body) {
   return rta;
 }
 
-export async function delet(model, id) {
+async function delet(model, id) {
   const recordToDelete = await model.findByPk(id);
   if (recordToDelete === -1) {
     throw boom.notFound("Not found");
@@ -31,3 +31,5 @@ export async function delet(model, id) {
   await recordToDelete.destroy();
   return { message: "deleted", id: id };
 }
+
+module.exports = { add, find, update, delet };

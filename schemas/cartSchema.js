@@ -1,4 +1,4 @@
-import Joi from "joi";
+const Joi = require("joi");
 
 const id = Joi.string();
 const name = Joi.string().alphanum();
@@ -19,4 +19,4 @@ const deleteCartSchema = Joi.object({
   id: id.required(),
 });
 
-export { createCartSchema, deleteCartSchema };
+module.exports = { createCartSchema, deleteCartSchema };

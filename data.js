@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from "uuid";
+const { v4: uuidv4 } = require("uuid");
 let data = [
   {
     id: uuidv4(),
@@ -365,4 +365,4 @@ let data = [
   },
 ];
 
-export { data };
+module.exports = { data };

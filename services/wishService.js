@@ -1,5 +1,5 @@
-import { add, delet } from "../helpers/services.js";
-import { sequelize } from "./../libs/sequelize.js";
+const { add, delet } = require("../helpers/services.js");
+const { sequelize } = require("./../libs/sequelize.js");
 
 class wishService {
   constructor() {
@@ -19,4 +19,4 @@ class wishService {
   }
 }
 
-export { wishService };
+module.exports = { wishService };

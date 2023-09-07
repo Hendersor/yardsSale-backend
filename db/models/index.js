@@ -1,7 +1,8 @@
-import { User, UserModel } from "./userModels.js";
-import { Product, ProductsModel } from "./productModels.js";
-import { Wish, WishModel } from "./wishModels.js";
-import { Cart, CartModel } from "./cartModels.js";
+const { User, UserModel } = require("./userModels.js");
+const { Product, ProductsModel } = require("./productModels.js");
+const { Wish, WishModel } = require("./wishModels.js");
+const { Cart, CartModel } = require("./cartModels.js");
+
 // These are the Schemas for all the tables
 // and if they haven't been created sequealize will do it.
 // We are exporting this fuction because
@@ -13,4 +14,4 @@ function setupModels(sequelize) {
   Cart.init(CartModel, Cart.config(sequelize));
 }
 
-export { setupModels };
+module.exports = { setupModels };

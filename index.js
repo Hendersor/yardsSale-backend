@@ -1,6 +1,9 @@
-import Express from "express";
-import { routerApi } from "./routes/index.js";
-import { errorHandler, boomErrorHandler } from "./middlewares/errorHandler.js";
+const Express = require("express");
+const { routerApi } = require("./routes/index.js");
+const {
+  errorHandler,
+  boomErrorHandler,
+} = require("./middlewares/errorHandler.js");
 const app = Express();
 const port = 3000;
 app.use(Express.json());

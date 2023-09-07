@@ -1,10 +1,10 @@
-import express from "express";
-import { wishService } from "../services/wishService.js";
-import { schemaValidator } from "../middlewares/schemaValidator.js";
-import {
+const express = require("express");
+const { wishService } = require("../services/wishService.js");
+const { schemaValidator } = require("../middlewares/schemaValidator.js");
+const {
   createProductSchema,
   getProductSchema,
-} from "../schemas/productsSchema.js";
+} = require("../schemas/productsSchema.js");
 const router = express.Router();
 const service = new wishService();
 
@@ -37,4 +37,4 @@ router.post(
   }
 );
 
-export { router };
+module.exports = { router };

@@ -1,4 +1,4 @@
-import { Model, DataTypes, Sequelize } from "sequelize";
+const { Model, DataTypes, Sequelize } = require("sequelize");
 
 const USER_TABLE = "users";
 
@@ -27,6 +27,12 @@ const UserModel = {
     type: DataTypes.STRING,
   },
 
+  role:{
+    allowNull: false,
+    type: DataTypes.STRING,
+    defaultValue: 'customer'
+  },
+
   createdAt: {
     allowNull: false,
     type: DataTypes.DATE,
@@ -48,4 +54,4 @@ class User extends Model {
   }
 }
 
-export { USER_TABLE, UserModel, User };
+module.exports = { USER_TABLE, UserModel, User };
