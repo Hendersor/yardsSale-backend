@@ -18,7 +18,7 @@ sequelize
   // This is the model function. And it's going to execute
   // right before the connection to create the models of the tables only if they are not already created.
   .then(() => {
-    console.log("Connection done!")
+    console.log("Connection done!");
   })
   .catch((err) => {
     console.error("Connection failed!");

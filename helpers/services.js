@@ -24,12 +24,16 @@ async function update(model, id, body) {
 }
 
 async function delet(model, id) {
-  const recordToDelete = await model.findByPk(id);
-  if (recordToDelete === -1) {
-    throw boom.notFound("Not found");
+  if (id) {
+    const recordToDelete = await model.findByPk(id);
+    if (recordToDelete === -1) {
+      throw boom.notFound("Not found");
+    }
+    await recordToDelete.destroy();
+    return { message: "deleted", id: id };
+  } else {
+    return [];
   }
-  await recordToDelete.destroy();
-  return { message: "deleted", id: id };
 }
 
 module.exports = { add, find, update, delet };
