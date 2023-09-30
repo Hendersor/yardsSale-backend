@@ -1,16 +1,12 @@
 const Joi = require("joi");
 
 const id = Joi.string();
-const name = Joi.string().alphanum();
-const category = Joi.string().alphanum();
-const description = Joi.string().alphanum();
-const price = Joi.number().integer();
+const title = Joi.string().alphanum().trim().min(1).max(255);
+const price = Joi.number().precision(2);
 const image = Joi.string().uri();
 
 const createCartSchema = Joi.object({
-  title: name.required(),
-  category: category.required(),
-  description: description.required(),
+  title: title.required(),
   price: price.required(),
   image: image.required(),
 });

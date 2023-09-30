@@ -1,4 +1,3 @@
-const { v4: uuidv4 } = require("uuid");
 const boom = require("@hapi/boom");
 
 async function add(model, data) {
@@ -32,7 +31,8 @@ async function delet(model, id) {
     await recordToDelete.destroy();
     return { message: "deleted", id: id };
   } else {
-    return [];
+    await model.update({ products: null }, { where: {} });
+    return { message: "ALL orders deleted" };
   }
 }
 

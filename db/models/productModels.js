@@ -5,29 +5,45 @@ const PRODUCT_TABLE = "products";
 const ProductsModel = {
   id: {
     allowNull: false,
-    autoIncrement: true,
     primaryKey: true,
-    type: DataTypes.INTEGER,
+    type: DataTypes.UUID,
+    defaultValue: Sequelize.UUIDV4,
+    unique: true,
   },
   title: {
     allowNull: false,
     type: DataTypes.STRING,
+    validate: {
+      notEmpty: true,
+      len: [1, 255],
+    },
   },
   category: {
     allowNull: false,
     type: DataTypes.STRING,
+    validate: {
+      notEmpty: true,
+      len: [1, 255],
+    },
   },
   description: {
     allowNull: false,
     type: DataTypes.STRING,
+    validate: {
+      notEmpty: true,
+      len: [1, 1000],
+    },
   },
   price: {
     allowNull: false,
-    type: DataTypes.INTEGER,
+    type: DataTypes.DECIMAL(10, 2),
   },
   image: {
     allowNull: false,
     type: DataTypes.STRING(255),
+    validate: {
+      isUrl: true,
+    },
   },
 };
 

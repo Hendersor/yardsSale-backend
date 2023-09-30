@@ -35,6 +35,7 @@ router.post(
   async (req, res) => {
     const body = req.body;
     const newProduct = await service.create(body);
+    console.log(newProduct);
     res.json(newProduct);
   }
 );

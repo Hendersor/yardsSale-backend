@@ -1,10 +1,10 @@
 const Joi = require("joi");
 
-const id = Joi.string();
-const title = Joi.string().alphanum();
-const category = Joi.string().alphanum();
-const description = Joi.string().alphanum();
-const price = Joi.number().integer();
+const id = Joi.string().guid({ version: "uuidv4" });
+const title = Joi.string().trim().min(1).max(255);
+const category = Joi.string().trim().min(1).max(255);
+const description = Joi.string().trim().min(1).max(1000);
+const price = Joi.number();
 const image = Joi.string().uri();
 
 const createProductSchema = Joi.object({

@@ -5,9 +5,10 @@ const USER_TABLE = "users";
 const UserModel = {
   id: {
     allowNull: false,
-    autoIncrement: true,
     primaryKey: true,
-    type: DataTypes.INTEGER,
+    type: DataTypes.UUID,
+    defaultValue: Sequelize.UUIDV4,
+    unique: true,
   },
 
   username: {
@@ -27,10 +28,10 @@ const UserModel = {
     type: DataTypes.STRING,
   },
 
-  role:{
+  role: {
     allowNull: false,
     type: DataTypes.STRING,
-    defaultValue: 'customer'
+    defaultValue: "customer",
   },
 
   createdAt: {
