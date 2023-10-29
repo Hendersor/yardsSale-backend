@@ -7,7 +7,7 @@ class userService {
   }
 
   async allUsers() {
-    return await this.models.findAll();
+    return await this.models.findAll({ include: ["customer"] });
   }
 
   async findUser(id) {

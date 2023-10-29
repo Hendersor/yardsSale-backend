@@ -5,9 +5,16 @@ async function add(model, data) {
   return recordToCreate;
 }
 
-async function find(model, id) {
-  const recordToFind = await model.findByPk(id);
-  if (recordToFind === -1) {
+async function find(model, id, include) {
+  const options =
+    include === undefined
+      ? {}
+      : {
+          include: [{ association: "customer", include: ["user"] }, "items"],
+        };
+  const recordToFind = await model.findByPk(id, options);
+
+  if (!recordToFind) {
     throw boom.notFound("Not found");
   }
   return recordToFind;
@@ -25,7 +32,9 @@ async function update(model, id, body) {
 async function delet(model, id) {
   if (id) {
     const recordToDelete = await model.findByPk(id);
-    if (recordToDelete === -1) {
+    console.log(model, id);
+
+    if (!recordToDelete) {
       throw boom.notFound("Not found");
     }
     await recordToDelete.destroy();
