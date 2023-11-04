@@ -4,6 +4,8 @@ const {
   errorHandler,
   boomErrorHandler,
 } = require("./middlewares/errorHandler.js");
+const { checkApiKey } = require("./middlewares/authHandler.js");
+
 const app = Express();
 const port = 3000;
 app.use(Express.json());

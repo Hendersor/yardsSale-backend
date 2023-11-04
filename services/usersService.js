@@ -1,5 +1,6 @@
 const { add, find, update, delet } = require("../helpers/services.js");
 const { sequelize } = require("./../libs/sequelize.js");
+const bcrypt = require("bcrypt");
 
 class userService {
   constructor() {
@@ -15,7 +16,10 @@ class userService {
   }
 
   async createUser(data) {
-    return await add(this.models, data);
+    const hash = await bcrypt.hash(data.password, 10);
+    const newUser = await add(this.models, { ...data, password: hash });
+    delete newUser.dataValues.password;
+    return newUser;
   }
 
   async updateUser(id, body) {
