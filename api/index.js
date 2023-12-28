@@ -7,13 +7,14 @@ const {
 const { checkApiKey } = require("./middlewares/authHandler.js");
 
 const app = Express();
-const port = 3000;
+const port = process.env.PORT;
 app.use(Express.json());
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send("Server on");
 });
-require("./utils/auth");
+
+require("./utils/auth/index.js");
 routerApi(app);
 app.use(boomErrorHandler);
 app.use(errorHandler);
