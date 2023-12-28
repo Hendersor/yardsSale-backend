@@ -25,6 +25,21 @@ class ordersService {
     return find(this.models, id, true);
   }
 
+  async findByUser() {
+    const orders = await this.models.findAll({
+      where: {
+        "$customer.user.id": userId,
+      },
+      include: [
+        {
+          association: "customer",
+          include: ["user"],
+        },
+      ],
+    });
+    return orders;
+  }
+
   async deleteOrders() {
     return delet(this.models);
   }

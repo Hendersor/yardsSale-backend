@@ -20,6 +20,12 @@ async function find(model, id, include) {
   return recordToFind;
 }
 
+async function findEmail(model, email) {
+  console.log(model);
+  const recordToFind = await model.findOne({ where: { email } });
+  return recordToFind;
+}
+
 async function update(model, id, body) {
   const recordToUpdate = await model.findByPk(id);
   if (recordToUpdate === -1) {
@@ -31,9 +37,9 @@ async function update(model, id, body) {
 
 async function delet(model, id) {
   if (id) {
-    const recordToDelete = await model.findByPk(id);
     console.log(model, id);
-
+    const recordToDelete = await model.findByPk(id);
+    console.log(recordToDelete);
     if (!recordToDelete) {
       throw boom.notFound("Not found");
     }
@@ -45,4 +51,4 @@ async function delet(model, id) {
   }
 }
 
-module.exports = { add, find, update, delet };
+module.exports = { add, find, update, delet, findEmail };

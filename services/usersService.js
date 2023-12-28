@@ -1,4 +1,10 @@
-const { add, find, update, delet } = require("../helpers/services.js");
+const {
+  add,
+  find,
+  update,
+  delet,
+  findEmail,
+} = require("../helpers/services.js");
 const { sequelize } = require("./../libs/sequelize.js");
 const bcrypt = require("bcrypt");
 
@@ -13,6 +19,10 @@ class userService {
 
   async findUser(id) {
     return await find(this.models, id);
+  }
+
+  async findByEmail(email) {
+    return await findEmail(this.models, email);
   }
 
   async createUser(data) {

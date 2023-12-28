@@ -13,6 +13,7 @@ app.use(Express.json());
 app.get("/", (req, res) => {
   res.send("Server on");
 });
+require("./utils/auth");
 routerApi(app);
 app.use(boomErrorHandler);
 app.use(errorHandler);
