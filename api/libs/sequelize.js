@@ -9,7 +9,8 @@ const URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${
 // This part represents a successful connection to the BD
 const sequelize = new Sequelize(URI, {
   dialect: "postgres",
-  logging: true,
+  // logging: true,
+  logging: process.env.NODE_ENV === "dev" ? console.log : false,
 });
 setupModels(sequelize);
 
@@ -21,7 +22,7 @@ sequelize
     console.log("Connection done!");
   })
   .catch((err) => {
-    console.error("Connection failed!");
+    console.error("Connection failed!", err);
   });
 
 module.exports = { sequelize };
